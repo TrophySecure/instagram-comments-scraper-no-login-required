@@ -1,142 +1,66 @@
-[Instagram Comments Scraper No Login Required](https://apify.com/data-slayer/instagram-comments-scraper-no-login-required?fpr=data)
+[Instagram Comments Scraper No Login Required](https://apify.com/monumental_world/instagram-comments-scraper-no-login-required?fpr=data)
 
-Extract Instagram comments from any public post without authentication. This cookieless scraper enables social media analysts to gather audience sentiment, engagement metrics, and competitive intelligence at scale — no Instagram account required.
+# Instagram Comments Export to Excel (cookieless)
 
-## 📺 Video Tutorial: How it Works
+## Need to download Instagram comments to Excel? This tool helps you extract engagement data without logging in
 
-[Video](https://www.youtube.com/embed/zdMdCLIkFRg?enablejsapi=1&rel=0)
+Perfect for social media analysts, marketing agencies, and business owners who need to analyze Instagram comments at scale. Export thousands of comments from any public Instagram post directly to Excel, CSV, or XML—no technical skills or Instagram login required.
 
----
+## Step-by-Step Guide
 
-## Inputs
+**Step 1:** Copy the Instagram post URL you want to analyze. You can use the full URL (like `https://www.instagram.com/p/DSZ1428iHtf/`) or just the post code (like `DSZ1428iHtf`).
 
-| Field | Type | Description |
-| --- | --- | --- |
-| postCode | String | Instagram post shortcode, post ID, or full post URL (e.g., "C1AbCdEfGhI" or "[https://www.instagram.com/p/C1AbCdEfGhI/](https://www.instagram.com/p/C1AbCdEfGhI/)") |
+**Step 2:** Paste the URL into the input field and click "Start." The tool works immediately—no account creation, no cookies, no login required.
 
-## Outputs
+**Step 3:** Download your data as Excel (.xlsx), CSV, or XML. Open it in Excel, Google Sheets, or any spreadsheet software to start analyzing.
 
-**Formats**: JSON, CSV, Excel
+## What columns will I get?
 
-**Key Fields**:
+Your download will include the following columns:
 
-- `id` - Unique comment identifier
-- `text` - Comment content
-- `like_count` - Number of likes on the comment
-- `created_at` - Unix timestamp of comment creation
-- `is_pinned` - Whether the comment is pinned by the post author
-- `is_ranked_comment` - Indicates if the comment is algorithmically ranked
-- `mentions` - Array of @mentioned usernames
-- `hashtags` - Array of hashtags used in the comment
-- `user.id` - Commenter's Instagram user ID
-- `user.username` - Commenter's Instagram handle
-- `user.full_name` - Commenter's display name
-- `user.is_verified` - Verification badge status
-- `user.is_private` - Whether the commenter's profile is private
-- `user.profile_pic_url` - Profile picture URL
+- **Comment ID** - Unique identifier for each comment
+- **Post URL** - Link to the Instagram post
+- **Comment Text** - The full text of the comment, including emojis
+- **Comment Timestamp** - When the comment was posted
+- **Comment Likes Count** - Number of likes the comment received
+- **Author Username** - The commenter's Instagram handle
+- **Author Full Name** - The commenter's display name
+- **Author Is Verified** - Whether the account has a verified badge
+- **Author Followers Count** - How many followers the commenter has
+- **Reply To Comment ID** - Shows if this is a reply to another comment
+- **Has Mentions** - Indicates if the comment mentions other users
+- **Mentioned Usernames** - Lists any @mentioned accounts
 
-## How to Use
+## How to use this data
 
-**Step 1**: Enter the Instagram post code, ID, or full URL in the `postCode` input field.
+**Analyze Audience Sentiment:** Sort comments by likes and read through top responses to understand how your audience truly feels about your content. Filter by keywords to identify positive, negative, or neutral sentiment patterns.
 
-**Step 2**: Configure optional parameters such as maximum comments to extract or sorting preferences.
+**Identify Engagement Trends:** Track which types of comments get the most likes, when your audience is most active, and which posts generate the most conversation. Use timestamps to find peak engagement hours for future posting.
 
-**Step 3**: Run the scraper and download your data in JSON, CSV, or Excel format for immediate analysis.
+**Discover Influencer Opportunities:** Sort by follower count to find engaged users with large audiences. Filter verified accounts or high-follower commenters to identify potential brand ambassadors or collaboration partners for your marketing campaigns.
 
-## Sample Output
+## Input Settings
 
-```
-[
-  {
-    "id": "18064427546538949",
-    "text": "This is exactly what we needed! 🔥",
-    "like_count": 127,
-    "created_at": 1765579165,
-    "is_pinned": false,
-    "is_ranked_comment": true,
-    "mentions": [],
-    "hashtags": [],
-    "user": {
-      "id": "57536451028",
-      "username": "marketing_pro_2024",
-      "full_name": "Sarah Mitchell",
-      "is_verified": false,
-      "is_private": false,
-      "profile_pic_url": "https://scontent-bru2-1.cdninstagram.com/v/t51.2885-19/profile_pic.jpg"
-    }
-  },
-  {
-    "id": "17858885652504626",
-    "text": "@brandname love this approach! When's the next drop?",
-    "like_count": 43,
-    "created_at": 1765679459,
-    "is_pinned": false,
-    "is_ranked_comment": true,
-    "mentions": ["@brandname"],
-    "hashtags": [],
-    "user": {
-      "id": "48783447503",
-      "username": "tech_enthusiast",
-      "full_name": "Alex Chen",
-      "is_verified": true,
-      "is_private": false,
-      "profile_pic_url": "https://scontent-bru2-1.cdninstagram.com/v/t51.2885-19/verified_profile.jpg"
-    }
-  }
-]
-```
+**Post Code/URL:** Simply paste any Instagram post link. You can use the complete URL like `https://www.instagram.com/p/DSZ1428iHtf/` or just the short code like `DSZ1428iHtf`. The tool automatically recognizes both formats and extracts all available comments from that post.
+
+## Frequently Asked Questions
+
+**Q: Do I need an Instagram account?**
+
+No! This tool works completely cookieless. You don't need to log in or provide any credentials. Just paste the post URL and start extracting.
+
+**Q: Can I open this in Google Sheets?**
+
+Yes, absolutely. Download the CSV format and upload it directly to Google Sheets. You can also open Excel files in Google Sheets by uploading the .xlsx file to Google Drive.
+
+**Q: How many comments can I export?**
+
+You can export all publicly available comments from any Instagram post. The tool captures comment text, engagement metrics, author details, and reply threads.
+
+**Q: Will this work with private accounts?**
+
+The tool only works with public Instagram posts. If a post is from a private account, the comments won't be accessible without proper permissions.
 
 ---
 
-## Key Features
-
-🔒 **Cookieless / No Login Required** - Access public Instagram comment data without authentication, eliminating account suspension risks and credential management overhead.
-
-📈 **Scalable Architecture** - Process thousands of comments from viral posts with enterprise-grade infrastructure designed for high-volume data extraction.
-
-✅ **Rich Comment Data** - Capture complete comment metadata including text, like counts, timestamps, mentions, hashtags, user profiles, verification status, and engagement metrics.
-
-⚡ **Fast & Reliable** - Optimized extraction engine delivers consistent performance with built-in retry logic and error handling for production workflows.
-
-📊 **Export-Ready Formats** - Download structured data in JSON, CSV, or Excel formats for immediate analysis in BI tools, sentiment analysis platforms, or custom dashboards.
-
-## Use Cases
-
-**Social Media Managers**: Monitor brand mentions and audience sentiment across competitor posts to identify trending topics, measure campaign resonance, and respond to customer feedback in real-time.
-
-**Market Research Analysts**: Aggregate thousands of comments from industry influencers to uncover consumer pain points, product preferences, and emerging market trends for strategic planning.
-
-**Growth Marketers**: Analyze engagement patterns on viral content to reverse-engineer successful post strategies, identify high-value audience segments, and optimize content calendars for maximum reach.
-
-## Important Considerations
-
-This scraper works exclusively with public Instagram profiles. Private accounts and restricted content cannot be accessed.
-
-## 🧩 Other Instagram Actors by Data Slayer
-
-| Actor | What it does | Link |
-| --- | --- | --- |
-| Instagram Followers Scraper | Extract follower lists from any account | [Try it](https://apify.com/data-slayer/instagram-followers-scraper---no-login) |
-| Instagram Following Scraper | See who any account follows | [Try it](https://apify.com/data-slayer/instagram-following) |
-| Instagram Posts Scraper | Extract posts from any profile | [Try it](https://apify.com/data-slayer/instagram-posts) |
-| Instagram Likes Scraper | Extract users who liked any post | [Try it](https://apify.com/data-slayer/instagram-likes) |
-| Instagram Reels Scraper | Search and extract Instagram Reels | [Try it](https://apify.com/data-slayer/instagram-search-reels) |
-| Instagram Profile Scraper | Get full profile data with contact info | [Try it](https://apify.com/data-slayer/instagram-user-info-scraper-cookieless) |
-| Instagram User Search | Search Instagram users by keyword | [Try it](https://apify.com/data-slayer/instagram-search-users) |
-| Instagram Hashtag Scraper | Discover hashtags and media counts | [Try it](https://apify.com/data-slayer/instagram-hashtags-scraper-no-login-required) |
-| Instagram Location Posts | Extract posts from any location | [Try it](https://apify.com/data-slayer/instagram-location-posts) |
-
-**Need verified emails?** Our [LinkedIn Post Engagers Email Finder](https://apify.com/data-slayer/linkedin-post-to-verified-leads) and [LinkedIn Audience Email Finder](https://apify.com/data-slayer/linkedin-influencer-audience-to-verified-leads) extract verified work emails from LinkedIn engagement data.
-
-## 💬 Feedback and Support
-
-We actively maintain this actor and ship improvements based on user feedback. If you run into any issues or have ideas for new features:
-
-- Create an issue on the Actor's **Issues tab** in Apify Console
-- Rate the actor if it helped you — it helps others find it too
-
-We typically respond within 24 hours.
-
----
-
----
+Export Instagram comments easily with this instagram scraper and instagram comments scraper tool. Perfect for instagram comment scraping, export instagram comments needs, and works as a complete instagram data extractor for instagram analytics scraping and instagram comment mining projects.
